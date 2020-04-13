@@ -1,6 +1,6 @@
 package com.vlsu.studies.tree;
 
-public class SimpleNode<T> implements INode {
+public class SimpleNode<T> implements INode<T> {
     private final T value;
 
     public SimpleNode(T value) {
@@ -9,6 +9,11 @@ public class SimpleNode<T> implements INode {
 
     public T calculate() {
         return value;
+    }
+
+    @Override
+    public String toString() {
+        return value.toString();
     }
 
 }

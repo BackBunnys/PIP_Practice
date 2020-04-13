@@ -10,7 +10,7 @@ public class NegationNode implements INode<Boolean> {
 
     public Boolean calculate() {
         return !node.calculate();
-    }
+    } //Операция унарная, оптимизировать нельзя
 
     @Override
     public String toString() {
