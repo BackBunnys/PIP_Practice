@@ -5,7 +5,6 @@ import com.vlsu.studies.graph.INode;
 public class NegationNode implements INode<Boolean> {
     private INode<Boolean> node;
 
-
     public NegationNode(INode<Boolean> node) {
         this.node = node;
     }
@@ -16,7 +15,7 @@ public class NegationNode implements INode<Boolean> {
 
     @Override
     public String toString() {
-        return "(¬" + node + ")";
+        return "¬(" + node + ")";
     }
 
 
