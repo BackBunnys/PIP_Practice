@@ -4,9 +4,9 @@ import com.vlsu.studies.arithmetic.binary.interfaces.BinaryOperation;
 
 public class GCD implements BinaryOperation {
 
-    public int Calc(int x, int y)
+    public int calc(int x, int y)
     {
-        while(y != 0)
+        while(y != 0 && x != 0)
         {
             x %= y;
             
@@ -14,6 +14,6 @@ public class GCD implements BinaryOperation {
             x = y;
             y = temp;
         }
-        return x;
+        return Math.abs(x + y);
     }
 }
